@@ -7,10 +7,13 @@ export default function Dashboard(props) {
         <AuthenticatedLayout auth={props.auth} errors={props.errors} header={"Dashboard"} >
             <Head title="Dashboard" />
 
-            <div className="py-12">
-                <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                    <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                        <div className="p-6 bg-white border-b border-gray-200">You're logged in!</div>
+            <div className="px-4 pt-5 my-5 text-center border-bottom">
+                <h1 className="display-4 fw-bold">Centered screenshot</h1>
+                <div className="col-lg-6 mx-auto">
+                    <p className="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div className="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                        <button type="button" className="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
+                        <button type="button" className="btn btn-outline-secondary btn-lg px-4">Secondary</button>
                     </div>
                 </div>
             </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\User;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Route;
@@ -16,7 +17,10 @@ class PostController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Articles');
+        $users = User::all();
+        return Inertia::render('Articles',[
+            'users' => $users
+        ]);
     }
 
     /**

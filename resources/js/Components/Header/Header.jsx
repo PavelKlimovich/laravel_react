@@ -1,4 +1,4 @@
-export default function Header({header}) {
+export default function Header({header =''}) {
     return (
         <header>
            {header}
